@@ -1,0 +1,61 @@
+@import url(./reset.css);
+
+body {
+    background-color: rgb(199, 217, 232);
+    color: rgb(41, 42, 57);
+}
+
+.container {
+    max-width: calc(100% - 60px, 1080px);
+    margin: 0 30px;
+    height: 100dvh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+input {
+    background-color: rgb(221, 226, 230);
+    border: 0.5px solid rgb(57, 56, 56);
+    border-radius: 7px;
+    padding: 1px 10px;
+}
+
+input:focus {
+    border: 1px solid rgb(57, 56, 56);
+}
+
+.item {
+    font-size: 20px;
+    margin: 20px 5px;
+}
+
+.table-of-books {
+    width: 100%;
+    border: 1px solid rgb(25, 25, 25);
+}
+
+tbody, thead, table {
+    width: 100%;
+    font-size: 20px;
+    /* border-collapse: collapse; */
+    /* box-shadow: 10px 10px 10px rgb(88, 87, 87); */
+}
+
+table {
+    margin-top: 40px;
+}
+
+td, th {
+    width: 33%;
+    list-style: none;
+}
+
+th {
+    text-align: center;
+}
+
+
+tbody {
+    margin-top: 30px;
+}
