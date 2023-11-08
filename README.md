@@ -91,5 +91,12 @@ document.querySelector('.book-name-filter-input').addEventListener('input', filt
 document.querySelector('.year-filter-input').addEventListener('input', filterBooksByYear);
 ```
 
+## Result
+There are screensots of how all 3 filters work:
+![Result from using filter by name of book](Screenshot_2.png)
+![Result from using filter by name of author](Screenshot_3.png)
+![Result from using filter by year of publishing](Screenshot_4.png)
+
+
 ### Demo
 You can try this programm [here](https://maksimdimov.github.io/filtering-items/).
