@@ -9,6 +9,7 @@ This is simple programm that contain small list of books with authors and years 
 
 ### Structure
 ## HTML
+In my HTML I have 3 inputs for 3 filters and table that will be filled up by books from the array from JavaScript document.
 ```html
 <body>
     <main>
