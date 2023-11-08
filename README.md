@@ -103,5 +103,9 @@ There are screensots of how all 3 filters work:
 3) Result from using filter by year of publishing:
 ![Result from using filter by year of publishing](Screenshot_4.png)
 
-### Demo
+## Demo
 You can try this programm [here](https://maksimdimov.github.io/filtering-items/).
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
