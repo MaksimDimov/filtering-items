@@ -45,20 +45,20 @@ CSS have only styling, and program work without this document.
 Creating a function, That will fill ip the table by book information.
 ```JavaScript
 function renderBooks(books) {
-const tableBody = document.querySelector('.table-of-books');
-        tableBody.innerHTML = '';
-        books.forEach(book => {
-            const row = document.createElement('tr');
-            const titleCell = document.createElement('td');
-            titleCell.textContent = book.title;
-            const authorCell = document.createElement('td');
-            authorCell.textContent = book.author;
-            const yearCell = document.createElement('td');
-            yearCell.textContent = book.publishedYear;
-            row.appendChild(titleCell);
-            row.appendChild(authorCell);
-            row.appendChild(yearCell);
-            tableBody.appendChild(row);
+    const tableBody = document.querySelector('.table-of-books');
+    tableBody.innerHTML = '';
+    books.forEach(book => {
+        const row = document.createElement('tr');
+        const titleCell = document.createElement('td');
+        titleCell.textContent = book.title;
+        const authorCell = document.createElement('td');
+        authorCell.textContent = book.author;
+        const yearCell = document.createElement('td');
+        yearCell.textContent = book.publishedYear;
+        row.appendChild(titleCell);
+        row.appendChild(authorCell);
+        row.appendChild(yearCell);
+        tableBody.appendChild(row);
         });
 }
 ```
