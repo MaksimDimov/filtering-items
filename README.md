@@ -84,6 +84,12 @@ function filterBooksByYear() {
     renderBooks(filteredBooksByYear);
 }
 ```
+And the last part is the smallest: just add the event listeners for the filter inputs: 
+```JavaScript
+document.querySelector('.author-filter-input').addEventListener('input', filterBooksByAuthor);
+document.querySelector('.book-name-filter-input').addEventListener('input', filterBooksByBookName);
+document.querySelector('.year-filter-input').addEventListener('input', filterBooksByYear);
+```
 
 ### Demo
 You can try this programm [here](https://maksimdimov.github.io/filtering-items/).
