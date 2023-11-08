@@ -38,5 +38,30 @@ In my HTML I have 3 inputs for 3 filters and table that will be filled up by boo
 </body>
 ```
 
+### CSS
+CSS have only styling, and program work without this document.
+
+### JavaScript
+Creating a function, That will fill ip the table by book information.
+```JavaScript
+function renderBooks(books) {
+const tableBody = document.querySelector('.table-of-books');
+        tableBody.innerHTML = '';
+        books.forEach(book => {
+            const row = document.createElement('tr');
+            const titleCell = document.createElement('td');
+            titleCell.textContent = book.title;
+            const authorCell = document.createElement('td');
+            authorCell.textContent = book.author;
+            const yearCell = document.createElement('td');
+            yearCell.textContent = book.publishedYear;
+            row.appendChild(titleCell);
+            row.appendChild(authorCell);
+            row.appendChild(yearCell);
+            tableBody.appendChild(row);
+        });
+}
+```
+
 ### Demo
 You can try this programm [here](https://maksimdimov.github.io/filtering-items/).
