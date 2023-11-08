@@ -32,11 +32,6 @@ const tableBody = document.querySelector('.table-of-books');
         });
 }
 
-function sortBooks() {
-    const sortedBooks = [...books].sort((a, b) => (a[sortKey] > b[sortKey] ? 1 : -1));
-    renderBooks(sortedBooks);
-}
-
 function filterBooksByAuthor() {
     const filterAuthor = document.querySelector('.author-filter-input').value;
     const filteredBooksByAuthor = books.filter((book) => book.author.toLowerCase().includes(filterAuthor.toLowerCase()));
