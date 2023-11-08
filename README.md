@@ -62,6 +62,28 @@ function renderBooks(books) {
         });
 }
 ```
+Next step will be creating 3 functions for every filter: 
+```JavaScript
+function filterBooksByAuthor() {
+    const filterAuthor = document.querySelector('.author-filter-input').value;
+    const filteredBooksByAuthor = books.filter((book) => book.author.toLowerCase().includes(filterAuthor.toLowerCase()));
+    renderBooks(filteredBooksByAuthor);  
+}
+
+function filterBooksByBookName() {
+    const filterBookName = document.querySelector('.book-name-filter-input').value;
+    const filteredBooksByBookName = books.filter((book) => book.title.toLowerCase().includes(filterBookName.toLowerCase()));
+    renderBooks(filteredBooksByBookName);
+}
+
+function filterBooksByYear() {
+    const filterYear = document.querySelector('.year-filter-input').value;
+    const filteredBooksByYear = books.filter((book) => {
+        return book.publishedYear.toString().includes(filterYear);
+    });
+    renderBooks(filteredBooksByYear);
+}
+```
 
 ### Demo
 You can try this programm [here](https://maksimdimov.github.io/filtering-items/).
