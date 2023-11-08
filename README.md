@@ -93,8 +93,11 @@ document.querySelector('.year-filter-input').addEventListener('input', filterBoo
 
 ## Result
 There are screensots of how all 3 filters work:
+1) Result from using filter by name of book:
 ![Result from using filter by name of book](Screenshot_2.png)
+2) Result from using filter by name of author:
 ![Result from using filter by name of author](Screenshot_3.png)
+3) Result from using filter by year of publishing:
 ![Result from using filter by year of publishing](Screenshot_4.png)
 
 
